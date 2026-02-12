@@ -1,0 +1,49 @@
+/* CSS básico para o site */
+
+body {
+    text-align: center;
+    background-color: lightgray;
+    font-family: Arial;
+}
+
+h1 {
+    color: red;
+    font-size: 40px;
+}
+
+h2 {
+    color: darkgreen;
+    font-size: 25px;
+}
+
+h3 {
+    color: darkblue;
+    font-size: 20px;
+}
+
+.photo-container {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.photo-container img {
+    width: 300px;
+    border: 2px solid black;
+}
+
+.suspect-info {
+    text-align: left;
+}
+
+.crimes-list {
+    text-align: left;
+}
+
+strong {
+    color: darkred;
+}
+
+.footer-note {
+    font-style: italic;
+    color: gray;
+}
