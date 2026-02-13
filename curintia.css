@@ -1,7 +1,41 @@
 img {
-    width:100px;
+    width: 400px;
     margin: 0 auto;
 }
 div {
     width: 400px;
+    margin: 0 auto; 
+}
+body {
+    background-image: url(https://static.gazetaesportiva.com/uploads/imagem/2023/12/13/agenciacorinthians-foto-187696-1.jpg);
+    background-position: center;
+    text-align: center;
+}
+table{
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+
+}
+h3{
+    background-color: aliceblue;
+    border-radius: 20px;
+    background-position: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 20%;
+    
+
+}
+h2{
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: auto;
+}
+
+header h2{
+    background-color: aliceblue;
+    border-radius: 20px;
+    
+    
 }
