@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+
+{% block title %}Arena - San Antonio Spurs{% endblock %}
+
+{% block content %}
+<section class="relative min-h-[400px] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1504450758481-7338bbe75c8e?w=1920'); background-size: cover; background-position: center; opacity: 0.4;"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-spurs-navy to-black opacity-90"></div>
+    
+    <div class="relative z-10 text-center px-4 py-16">
+        <img src="https://cdn.nba.com/teams/uploads/sites/1612730633/2022/09/FrostBankCenter_Horizontal_CS3_White.png" 
+             alt="Frost Bank Center" 
+             class="h-24 mx-auto mb-6">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            FROST BANK <span class="text-spurs-silver">CENTER</span>
+        </h1>
+        <p class="text-xl text-gray-300">A casa dos San Antonio Spurs</p>
+    </div>
+</section>
+
+<section class="container mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div>
+            <h2 class="text-3xl font-bold mb-6">
+                SOBRE A <span class="text-spurs-silver">ARENA</span>
+            </h2>
+            <div class="space-y-4 text-gray-300">
+                <p>
+                    O Frost Bank Center, anteriormente conhecido como AT&T Center, é uma arena multiuso localizada 
+                    em San Antonio, Texas. Inaugurado em 2002, o local tem sido o palco de inúmeras memoráveis 
+                    atuações dos Spurs e eventos de classe mundial.
+                </p>
+                <p>
+                    Com capacidade para mais de 18.000 espectadores em jogos de basquete, a arena oferece uma 
+                    experiência imersiva com tecnologia de última geração, assentos confortáveis e uma atmosfera 
+                    elétrica que inspira os jogadores em cada partida.
+                </p>
+                <p>
+                    A arena passou por diversas modernizações ao longo dos anos, incluindo a adição do Naming Rights 
+                    da Frost Bank em 2023, garantindo que o local continue sendo um dos melhores estádios da NBA.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <div class="bg-spurs-navy rounded-xl p-4">
+                    <span class="text-3xl font-bold text-spurs-silver">18.000+</span>
+                    <p class="text-gray-400">Capacidade</p>
+                </div>
+                <div class="bg-spurs-navy rounded-xl p-4">
+                    <span class="text-3xl font-bold text-spurs-silver">2002</span>
+                    <p class="text-gray-400">Inauguração</p>
+                </div>
+                <div class="bg-spurs-navy rounded-xl p-4">
+                    <span class="text-3xl font-bold text-spurs-silver">40+</span>
+                    <p class="text-gray-400">Lux Boxes</p>
+                </div>
+                <div class="bg-spurs-navy rounded-xl p-4">
+                    <span class="text-3xl font-bold text-spurs-silver">6</span>
+                    <p class="text-gray-400">Níveis</p>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800" 
+                 alt="Interior da Arena" 
+                 class="rounded-xl shadow-2xl w-full">
+        </div>
+    </div>
+</section>
+
+<section class="bg-black py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">
+            INSTALAÇÕES E <span class="text-spurs-silver">SERVIÇOS</span>
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <article class="bg-spurs-navy rounded-xl p-6">
+                <div class="text-4xl mb-4">🍔</div>
+                <h3 class="text-xl font-bold text-spurs-silver mb-2">Gastronomia</h3>
+                <p class="text-gray-400">
+                    Mais de 40 pontos de alimentação oferecendo desde clássicos texanos até opções internacionais 
+                    para todos os gostos.
+                </p>
+            </article>
+            
+            <article class="bg-spurs-navy rounded-xl p-6">
+                <div class="text-4xl mb-4">🚗</div>
+                <h3 class="text-xl font-bold text-spurs-silver mb-2">Estacionamento</h3>
+                <p class="text-gray-400">
+                    Amplo estacionamento gratuito com mais de 6.000 vagas. Opções de valet para eventos especiais.
+                </p>
+            </article>
+            
+            <article class="bg-spurs-navy rounded-xl p-6">
+                <div class="text-4xl mb-4">♿</div>
+                <h3 class="text-xl font-bold text-spurs-silver mb-2">Acessibilidade</h3>
+                <p class="text-gray-400">
+                    Instalações completas para pessoas com deficiência, incluindo assentos adaptados e banheiros acessíveis.
+                </p>
+            </article>
+            
+            <article class="bg-spurs-navy rounded-xl p-6">
+                <div class="text-4xl mb-4">📱</div>
+                <h3 class="text-xl font-bold text-spurs-silver mb-2">Tecnologia</h3>
+                <p class="text-gray-400">
+                    Wi-Fi gratuito de alta velocidade, telas LED de última geração e aplicativo oficial para torcedores.
+                </p>
+            </article>
+            
+            <article class="bg-spurs-navy rounded-xl p-6">
+                <div class="text-4xl mb-4">🎁</div>
+                <h3 class="text-xl font-bold text-spurs-silver mb-2">Loja Oficial</h3>
+                <p class="text-gray-400">
+                    A maior loja oficial dos Spurs fora do downtown, com produtos oficiais da equipe e artigos exclusivos.
+                </p>
+            </article>
+            
+            <article class="bg-spurs-navy rounded-xl p-6">
+                <div class="text-4xl mb-4">🎤</div>
+                <h3 class="text-xl font-bold text-spurs-silver mb-2">Entretenimento</h3>
+                <p class="text-gray-400">
+                    Shows, concertos e eventos familiares fazem da arena um centro de entretenimento completo.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12">
+        INFORMAÇÕES PARA <span class="text-spurs-silver">VISITANTES</span>
+    </h2>
+    
+    <div class="bg-spurs-navy rounded-2xl p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-spurs-silver mb-4">📍 Localização</h3>
+                <p class="text-gray-300 mb-2">Frost Bank Center</p>
+                <p class="text-gray-400">1 Frost Bank Center Dr</p>
+                <p class="text-gray-400">San Antonio, TX 78219</p>
+                <p class="text-gray-400">Estados Unidos</p>
+                
+                <h3 class="text-xl font-bold text-spurs-silver mb-4 mt-6">🕐 Horários</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><strong class="text-white">Jogos:</strong> Portões abrem 1h30 antes</li>
+                    <li><strong class="text-white">Bilheteria:</strong> Seg-Sáb, 10h-18h</li>
+                    <li><strong class="text-white">Loja:</strong> Seg-Sáb, 10h-21h</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold text-spurs-silver mb-4">🎫 Ingressos</h3>
+                <p class="text-gray-400 mb-4">
+                    Adquira seus ingressos diretamente na bilheteria oficial ou pelo site da NBA. 
+                    Os preços variam conforme a seção e opponent.
+                </p>
+                
+                <div class="bg-black rounded-lg p-4 mb-4">
+                    <h4 class="font-bold text-spurs-silver mb-2">Faixas de Preço</h4>
+                    <ul class="text-gray-400 text-sm space-y-1">
+                        <li>• Lower Bowl: $80 - $350</li>
+                        <li>• Upper Bowl: $25 - $80</li>
+                        <li>• Suites Privativas: Sob consulta</li>
+                    </ul>
+                </div>
+                
+                <a href="https://www.nba.com/spurs/tickets" 
+                   target="_blank"
+                   class="inline-block bg-spurs-silver text-black px-6 py-3 rounded-lg font-bold hover:bg-white transition-colors">
+                    Comprar Ingressos →
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mx-auto px-4 pb-16">
+    <div class="bg-gradient-to-r from-spurs-navy to-black rounded-2xl p-8 text-center">
+        <h3 class="text-2xl font-bold mb-4"> Experimente a Magia dos Spurs!</h3>
+        <p class="text-gray-400 mb-6 max-w-2xl mx-auto">
+            Nada se compara à energia de um jogo dos Spurs no Frost Bank Center. 
+            Junte-se a milhares de torcedores e faça parte da nossa história!
+        </p>
+        <a href="https://www.nba.com/spurs" 
+           target="_blank"
+           class="inline-block bg-spurs-silver text-black px-8 py-3 rounded-lg font-bold hover:bg-white transition-colors">
+            Site Oficial dos Spurs
+        </a>
+    </div>
+</section>
+{% endblock %}

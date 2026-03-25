@@ -1,0 +1,25 @@
+body {
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.spur-glow {
+    box-shadow: 0 0 20px rgba(182, 182, 180, 0.3);
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(182, 182, 180, 0.2);
+}

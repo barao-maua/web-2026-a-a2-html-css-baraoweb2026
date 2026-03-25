@@ -1,0 +1,74 @@
+{% load static %}
+<header class="bg-black border-b-4 border-spurs-silver">
+    <nav class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-20">
+            <a href="{% url 'home' %}" class="flex items-center gap-3">
+                <img src="{% static 'images/san-antonio-spurs-seeklogo.png' %}" 
+                     alt="San Antonio Spurs Logo" 
+                     class="h-12 w-auto">
+                <span class="text-2xl font-bold text-white tracking-wide">
+                    SAN ANTONIO <span class="text-spurs-silver">SPURS</span>
+                </span>
+            </a>
+            
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            
+            <ul class="hidden md:flex items-center gap-8">
+                <li>
+                    <a href="{% url 'home' %}" 
+                       class="text-white hover:text-spurs-silver transition-colors font-semibold {% if request.path == '/' %}text-spurs-silver border-b-2 border-spurs-silver{% endif %}">
+                        Início
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'roster' %}" 
+                       class="text-white hover:text-spurs-silver transition-colors font-semibold {% if request.path == '/roster/' %}text-spurs-silver border-b-2 border-spurs-silver{% endif %}">
+                        Elenco
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'history' %}" 
+                       class="text-white hover:text-spurs-silver transition-colors font-semibold {% if request.path == '/history/' %}text-spurs-silver border-b-2 border-spurs-silver{% endif %}">
+                        História
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'arena' %}" 
+                       class="text-white hover:text-spurs-silver transition-colors font-semibold {% if request.path == '/arena/' %}text-spurs-silver border-b-2 border-spurs-silver{% endif %}">
+                        Arena
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <ul class="flex flex-col gap-4">
+                <li>
+                    <a href="{% url 'home' %}" class="block text-white hover:text-spurs-silver transition-colors font-semibold">Início</a>
+                </li>
+                <li>
+                    <a href="{% url 'roster' %}" class="block text-white hover:text-spurs-silver transition-colors font-semibold">Elenco</a>
+                </li>
+                <li>
+                    <a href="{% url 'history' %}" class="block text-white hover:text-spurs-silver transition-colors font-semibold">História</a>
+                </li>
+                <li>
+                    <a href="{% url 'arena' %}" class="block text-white hover:text-spurs-silver transition-colors font-semibold">Arena</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
